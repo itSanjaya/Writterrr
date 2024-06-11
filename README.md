@@ -1,5 +1,5 @@
 
-# Writterrr 
+# [Writterrr] (http://44.202.59.88:3000/login) 
 
 ## Overview
 
@@ -7,7 +7,7 @@
 
 Have you ever tried editing feature in Twitter? Were you able to edit your content after you have posted? Why does this feature only limit to BlueTick Members? Sooo... that's where Writterrr comes in!
 
-Writterrr is a web app that will allow users to posts anything they want. Users can register and login. Once they're logged in, they can create or view their own posts. For every content that they post, they can use edit function easily.
+Writterrr is a web app that will allow users to posts anything they want. Users can register and login. Once they're logged in, they can create or view their own posts. For every content that they post, they can use edit function easily. The Live view is [here](http://44.202.59.88:3000/login).
 
 
 ## Data Model
