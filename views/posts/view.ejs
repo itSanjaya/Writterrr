@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writterrr</title>
+  <a href="/">Go Back to All Posts</a>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <br>
+  <br>
+  <div class="container">
+    <h1 class="mb-1"><%= locals.post.title %></h1>       
+    <a href="/posts/edit/<%= post.id %>" class="btn btn-info">Edit</a>
+    <div class="text-muted mb-2">
+      <%= post.createdAt.toLocaleDateString() %>
+      <%= post.createdAt.toLocaleTimeString() %>
+    </div>
+
+ 
+    <div>
+      <%- post.content%>
+    </div >
+  </div>
+  <footer>Copyright 2022 Writterrr</footer>
+
+</body>
+</html>

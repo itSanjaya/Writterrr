@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writterrr</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav>
+    <h1><a href="/">Writterrr</a></h1>
+    <ul>
+      <% if (locals.user) { %>
+        <li>Welcome, <%= user.email %></li>
+        <li><a href="/logout" class="btn">Log out</a></li>
+      <% } %>
+    </ul>
+  </nav>
+  <a href="/posts/create" class="btn btn-success">Create New Post</a> 
+  <br>
+  <br>
+        <% posts.forEach(post => { %>
+            <div class="card mt-4">
+                <div class = "card-body">
+                    <h4 class = "card-title"> <%= post.title %></h4>
+                    <div class="card-subtitle text-muted mb-2">
+                        <%= post.createdAt.toLocaleDateString() %>
+                        <%= post.createdAt.toLocaleTimeString() %>
+                    </div>
+                    <div class="card-text mb-2"><%= post.description %></div>
+                    <a href="posts/edit/<%= post.id %>" class="btn btn-info">Edit Post</a>
+                    <a href = "posts/<%= post.slug %>" class="btn btn-primary">See Content</a>
+                    <form action="/posts/<%= post.id %>?_method=DELETE" method="POST" class="btn btn-danger">
+                        <button type="submit" class="deleteButton">Delete Post</button>
+                    </form>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+
+
+</body>
+<footer>Copyright 2022 Writterrr</footer>
+</html>

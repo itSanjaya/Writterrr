@@ -1,0 +1,47 @@
+{
+  "name": "final-project-itsanjaya",
+  "version": "1.0.0",
+  "description": "The content below is an example project proposal / requirements document. \r <!--- Replace the text below the lines marked \"__TODO__\" with details specific to your project. Remove the \"TODO\" lines. -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0467-001-002-fall-2022/final-project-itSanjaya.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0467-001-002-fall-2022/final-project-itSanjaya/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0467-001-002-fall-2022/final-project-itSanjaya#readme",
+  "keywords": [],
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.2.2",
+    "cookie-parser": "^1.4.6",
+    "dompurify": "^2.4.0",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "hbs": "^4.2.0",
+    "jsdom": "^20.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "marked": "^4.2.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.7.2",
+    "require": "^0.4.4",
+    "slugify": "^1.6.5",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.3",
+    "nodemon": "^2.0.20"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
